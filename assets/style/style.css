@@ -107,6 +107,12 @@ header {
 
 .nav__shopping .avatar__image {
   width: 40px;
+  transition: border 0.4s ease;
+}
+
+.nav__shopping .avatar__image:hover {
+  border: 1px solid var(--orange-color);
+  border-radius: 2rem;
 }
 
 .nav__shopping .icon__cart:hover,
@@ -209,6 +215,12 @@ section {
 .increase__item {
   color: var(--orange-color);
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.decrease__item:hover,
+.increase__item:hover {
+  opacity: 75%;
 }
 
 .count {
@@ -224,6 +236,11 @@ section {
   padding: 8px 25px;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.add_to_cart:hover {
+  background-color: var(--pale-orange-color);
 }
 
 .add_to_cart a {
