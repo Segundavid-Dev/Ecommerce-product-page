@@ -131,13 +131,26 @@ section {
   justify-content: space-around;
 }
 
-.main__content-images {
+.main__image-img {
   width: 40%;
 }
 
 .main__content-images img {
   width: 400px;
-  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.main__content-products {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.main__content-products img {
+  width: 60px !important;
+  cursor: pointer;
 }
 
 .main__content-text {
