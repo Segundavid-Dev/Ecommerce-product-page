@@ -32,8 +32,22 @@
   box-sizing: border-box;
 }
 
+/* General styling */
 body {
   font-family: var(--body-font);
   font-weight: var(--font-size);
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 5vw;
 }
