@@ -223,6 +223,7 @@ section {
   justify-content: center;
   padding: 8px 25px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .add_to_cart a {
