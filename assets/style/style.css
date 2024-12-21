@@ -51,3 +51,65 @@ li {
 .container {
   margin: 0 5vw;
 }
+
+header {
+  margin: 1rem 0;
+}
+
+.nav {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--dark-grayish-blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo {
+  font-size: 1.7rem;
+  font-weight: var(--bold-font-weight);
+  margin-right: 3rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list li a {
+  color: var(--dark-grayish-blue-color);
+  font-size: 14px;
+  transition: all 0.1s ease;
+  padding-bottom: 1.5rem;
+}
+
+.nav__list li a:hover {
+  color: #111;
+  font-weight: 600;
+  border-bottom: 3px solid var(--orange-color);
+}
+
+.nav__shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__shopping .icon__cart {
+  margin-right: 3rem;
+}
+
+.nav__shopping .avatar__image {
+  width: 40px;
+}
+
+.nav__shopping .icon__cart:hover,
+.nav__shopping .avatar__image:hover {
+  cursor: pointer;
+}
