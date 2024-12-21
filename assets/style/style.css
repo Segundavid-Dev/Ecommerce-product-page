@@ -21,7 +21,7 @@
 
   /* font weights */
   --medium-font-weight: 400;
-  --bold-font-weight: 700;
+  --bold-font-weight: 900;
 }
 
 *,
@@ -49,7 +49,7 @@ li {
 }
 
 .container {
-  margin: 0 5vw;
+  margin: 0 10vw;
 }
 
 header {
@@ -112,4 +112,121 @@ header {
 .nav__shopping .icon__cart:hover,
 .nav__shopping .avatar__image:hover {
   cursor: pointer;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main__content-images {
+  width: 40%;
+}
+
+.main__content-images img {
+  width: 400px;
+  border-radius: 1rem;
+}
+
+.main__content-text {
+  color: var(--dark-grayish-blue-color);
+  padding-left: 6rem;
+  width: 50%;
+  /* letter-spacing: 2px; */
+}
+
+.main__content-text .subtitle {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.main__content-text .title {
+  color: #111;
+  font-size: 2rem;
+  font-weight: var(--bold-font-weight);
+  padding-bottom: 1rem;
+}
+
+.main__content-text .note {
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+
+.prices {
+  font-weight: var(--bold-font-weight);
+}
+
+.prices .current__price {
+  color: #111;
+}
+
+.prices .current__price {
+  font-size: 1.25rem;
+  font-weight: var(--bold-font-weight);
+  padding-bottom: 10px;
+}
+
+.prices .current__price span {
+  font-size: 0.65rem;
+  color: var(--white-color);
+  background-color: #111;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+.prices .previous__price {
+  font-size: 12px;
+  font-weight: var(--bold-font-weight);
+  text-decoration: line-through;
+  padding-bottom: 1rem;
+}
+
+.cart__manage {
+  display: flex;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--light-grayish-blue-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: var(--bold-font-weight);
+}
+
+.decrease__item,
+.increase__item {
+  color: var(--orange-color);
+  cursor: pointer;
+}
+
+.count {
+  font-size: 14px;
+  color: #111;
+}
+
+.add_to_cart {
+  background-color: var(--orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+.add_to_cart a {
+  color: #111;
+  font-size: 13px;
+  font-weight: var(--bold-font-weight);
 }

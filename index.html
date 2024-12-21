@@ -7,6 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- css -->
   <link rel="stylesheet" href="/assets/style/style.css">
+  <!-- remix icon -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+  />
   <title>Frontend Mentor | E-commerce product page</title>
   </style>
 </head>
@@ -62,25 +67,33 @@
   <section class="main__content container">
     <div class="main__content-images">
       <div class="main__image">
-        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img src="./images/image-product-1.jpg" alt="">
       </div>
     </div>
     <div class="main__content-text">
       <h3 class="subtitle">Sneaker Company</h3>
-      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <h1 class="title">Fall Limited Edition <br>Sneakers</h1>
       <p class="note">
         These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
+        durable rubber outer sole, they’ll  withstand everything the weather can offer.
       </p>
       <div class="prices">
         <p class="current__price">$125.00  <span>50%</span></p>
         <p class="previous__price">$250.00</p>
       </div>
+
       <div class="cart__manage">
-        <div class="decrease__item">-</div>
-        <div class="item">0</div>
-        <div class="increase__item">+</div>
-        <button class="add-to-cart"><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+        <div class="item">
+          <div class="decrease__item">-</div>
+          <div class="count">0</div>
+          <div class="increase__item">+</div>
+        </div>
+
+        <div class="add_to_cart">
+          <a href="#"><i class="ri-shopping-cart-2-line"></i>Add to cart</a>
+          
+        </div>
+      </div>
       </div>
     </div>
   </section>
