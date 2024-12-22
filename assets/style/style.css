@@ -133,18 +133,18 @@ section {
 
 .main__image-img {
   width: 40%;
+  /* margin-bottom: 1rem; */
 }
 
 .main__content-images img {
   width: 400px;
-  margin-bottom: 1.5rem;
   border-radius: 10px;
 }
 
 .main__content-products {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -260,4 +260,21 @@ section {
   color: #111;
   font-size: 13px;
   font-weight: var(--bold-font-weight);
+}
+
+/* hover styles for products */
+.product1,
+.product2,
+.product3,
+.product4 {
+  transition: all 0.5s ease;
+}
+
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover {
+  /* border: 2px solid var(--orange-color); */
+  opacity: 75%;
+  transition: all 0.5s ease;
 }
