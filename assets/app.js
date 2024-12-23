@@ -5,7 +5,7 @@ const decreaseItem = document.querySelector(".decrease__item");
 const increaseItem = document.querySelector(".increase__item");
 const count = document.querySelector(".count");
 const modal = document.querySelector(".modal");
-
+const cartCheckout = document.querySelector(".cart__checkout");
 let countValue = 0;
 
 // Increase cart item
@@ -22,7 +22,12 @@ decreaseItem.addEventListener("click", () => {
   }
 });
 
-// Toggle modal message
+// Open modal message
 iconCart.addEventListener("click", () => {
   modal.classList.add("modal__open");
+});
+
+// Checkout modal message
+cartCheckout.addEventListener("click", () => {
+  modal.classList.remove("modal__open");
 });
