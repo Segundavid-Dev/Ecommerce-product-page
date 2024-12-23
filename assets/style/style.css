@@ -336,7 +336,7 @@ section {
   font-weight: var(--bold-font-weight);
 }
 
-.cart__info-text span {
+.cart__info-text .total__price {
   color: #111;
 }
 
@@ -360,4 +360,12 @@ section {
 .cart__checkout a {
   color: #111;
   font-weight: var(--bold-font-weight);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
