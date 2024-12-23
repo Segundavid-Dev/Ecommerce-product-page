@@ -11,6 +11,13 @@ const delete_item = document.querySelector(".delete");
 const cartInfo = document.querySelector(".cart__info");
 let totalItem = document.querySelector(".total__item");
 let totalPrice = document.querySelector(".total__price");
+// main product image
+const mainImage = document.querySelector(".main__image-img ");
+// product images
+const product1 = document.querySelector(".product1"),
+  product2 = document.querySelector(".product2"),
+  product3 = document.querySelector(".product3"),
+  product4 = document.querySelector(".product4");
 const disCountPrice = 125;
 let countValue = 0;
 
@@ -57,15 +64,22 @@ addToCart.addEventListener("click", () => {
   }
 });
 
-// check if items have been added to cart to dynamically display modal messages
-// addToCart = false;
-// if (
-//   addToCart.addEventListener("click", () => {
-//     console.log("clicked event happen");
-//   })
-// ) {
-//   alert("good");
-// }
+// change product image on click event
+product1.addEventListener("click", () => {
+  mainImage.src = `images/image-product-1.jpg`;
+});
+
+product2.addEventListener("click", () => {
+  mainImage.src = `images/image-product-2.jpg`;
+});
+
+product3.addEventListener("click", () => {
+  mainImage.src = `images/image-product-3.jpg`;
+});
+
+product4.addEventListener("click", () => {
+  mainImage.src = `images/image-product-4.jpg`;
+});
 
 // still need some refactoring!!!
 delete_item.addEventListener("click", () => {
