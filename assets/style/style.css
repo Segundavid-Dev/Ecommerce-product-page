@@ -291,7 +291,7 @@ section {
 .modal {
   position: absolute;
   margin-left: -10rem;
-  /* top: -100%; */
+  top: -100%;
   -moz-box-shadow: 19px 20px 65px -40px rgba(0, 0, 0, 0.75);
   box-shadow: 19px 20px 65px -40px rgba(0, 0, 0, 0.75);
   font-size: 12px;
@@ -299,6 +299,12 @@ section {
   padding: 10px;
   background-color: #fff;
   z-index: 1000000;
+  transition: 2s ease;
+}
+/* open modal class */
+
+.modal__open {
+  top: 5rem;
 }
 
 .cart__title {
