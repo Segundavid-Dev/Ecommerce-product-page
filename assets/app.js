@@ -6,6 +6,7 @@ const increaseItem = document.querySelector(".increase__item");
 const count = document.querySelector(".count");
 const modal = document.querySelector(".modal");
 const cartCheckout = document.querySelector(".cart__checkout");
+const addToCart = document.querySelector(".add_to_cart");
 let countValue = 0;
 
 // Increase cart item
@@ -30,4 +31,14 @@ iconCart.addEventListener("click", () => {
 // Checkout modal message
 cartCheckout.addEventListener("click", () => {
   modal.classList.remove("modal__open");
+});
+
+// Add to cart functionality
+
+addToCart.addEventListener("click", () => {
+  if (countValue == 0) {
+    alert("Add item to cart!");
+  } else if (countValue > 0) {
+    modal.classList.add("modal__open");
+  }
 });

@@ -301,8 +301,8 @@ section {
   z-index: 1000000;
   transition: 1s ease;
 }
-/* open modal class */
 
+/* open modal class */
 .modal__open {
   top: 5rem;
 }
