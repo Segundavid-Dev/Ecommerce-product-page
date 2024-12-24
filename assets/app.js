@@ -14,6 +14,7 @@ let totalPrice = document.querySelector(".total__price");
 // main product image
 const mainImage = document.querySelector(".main__image-img ");
 // product images
+const products = document.querySelectorAll(".products");
 const product1 = document.querySelector(".product1"),
   product2 = document.querySelector(".product2"),
   product3 = document.querySelector(".product3"),
@@ -64,24 +65,24 @@ addToCart.addEventListener("click", () => {
   }
 });
 
-// change product image on click event
-product1.addEventListener("click", () => {
-  mainImage.src = `images/image-product-1.jpg`;
+// DRY code principle
+products.forEach(() => {
+  products[0].addEventListener("click", () => {
+    mainImage.src = `images/image-product-1.jpg`;
+  }),
+    products[1].addEventListener("click", () => {
+      mainImage.src = `images/image-product-2.jpg`;
+    }),
+    products[2].addEventListener("click", () => {
+      mainImage.src = `images/image-product-3.jpg`;
+    }),
+    products[3].addEventListener("click", () => {
+      mainImage.src = `images/image-product-4.jpg`;
+    });
 });
-
-product2.addEventListener("click", () => {
-  mainImage.src = `images/image-product-2.jpg`;
-});
-
-product3.addEventListener("click", () => {
-  mainImage.src = `images/image-product-3.jpg`;
-});
-
-product4.addEventListener("click", () => {
-  mainImage.src = `images/image-product-4.jpg`;
-});
-
 // still need some refactoring!!!
 delete_item.addEventListener("click", () => {
   alert("removed items from cart");
 });
+
+// change product image on click event
