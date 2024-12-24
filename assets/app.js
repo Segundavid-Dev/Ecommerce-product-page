@@ -11,14 +11,8 @@ const delete_item = document.querySelector(".delete");
 const cartInfo = document.querySelector(".cart__info");
 let totalItem = document.querySelector(".total__item");
 let totalPrice = document.querySelector(".total__price");
-// main product image
 const mainImage = document.querySelector(".main__image-img ");
-// product images
 const products = document.querySelectorAll(".products");
-const product1 = document.querySelector(".product1"),
-  product2 = document.querySelector(".product2"),
-  product3 = document.querySelector(".product3"),
-  product4 = document.querySelector(".product4");
 const disCountPrice = 125;
 let countValue = 0;
 
@@ -30,7 +24,7 @@ increaseItem.addEventListener("click", () => {
 
   // calculate total price
   const calculatedTotal = disCountPrice * countValue;
-  totalPrice.innerHTML = calculatedTotal;
+  totalPrice.innerHTML = `$${calculatedTotal}`;
 });
 
 // Decrease cart item
@@ -65,7 +59,7 @@ addToCart.addEventListener("click", () => {
   }
 });
 
-// DRY code principle
+// DRY code principle -> Change Product Image on click event
 products.forEach(() => {
   products[0].addEventListener("click", () => {
     mainImage.src = `images/image-product-1.jpg`;
@@ -80,9 +74,8 @@ products.forEach(() => {
       mainImage.src = `images/image-product-4.jpg`;
     });
 });
+
 // still need some refactoring!!!
 delete_item.addEventListener("click", () => {
-  alert("removed items from cart");
+  alert("deleted items");
 });
-
-// change product image on click event
