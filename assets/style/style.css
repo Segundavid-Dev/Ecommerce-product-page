@@ -449,6 +449,10 @@ section {
     color: #111;
   }
 
+  .nav__list li a:hover {
+    border-bottom: none;
+  }
+
   .remove {
     display: block;
     padding-bottom: 3rem;
@@ -520,9 +524,15 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    padding: 20px 30px;
   }
 
   .add_to_cart {
     padding: 20px 30px;
+    margin-bottom: 1rem;
+  }
+
+  .add_to_cart a {
+    font-size: 1rem !important;
   }
 }
