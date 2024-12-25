@@ -395,14 +395,34 @@ section {
 
 /* media queries*/
 @media screen and (max-width: 982px) {
+  header {
+    margin: 0;
+    padding: 1rem 0;
+    z-index: 1000000;
+  }
+  section {
+    padding: 1rem 0;
+  }
+
+  .header {
+    background-color: #fff;
+    box-shadow: 19px 20px 65px -40px rgba(0, 0, 0, 0.75) !important;
+    z-index: 10000 !important;
+  }
+  .nav {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
   .nav__logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
   }
   .nav__logo span {
     display: block;
-    font-size: 2rem;
+    margin-bottom: -3px;
+    /* font-size: 2rem; */
   }
 
   .nav__list {
@@ -443,5 +463,66 @@ section {
   .remove__navbar {
     left: -100%;
     transition: 0.5s ease;
+  }
+
+  .nav__shopping .icon__cart {
+    margin-right: 1rem;
+  }
+
+  .nav__shopping .avatar__image {
+    width: 30px;
+  }
+
+  .main__content {
+    display: block;
+  }
+
+  .main__image {
+    width: 100% !important;
+  }
+
+  .main__image-img {
+    width: 100% !important;
+  }
+  .main__content-text {
+    width: 100%;
+  }
+
+  .main__content-text {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+
+  .main__content-products {
+    gap: 1rem;
+  }
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 1rem; */
+  }
+
+  .prices .current__price span {
+    padding: 7px 15px;
+  }
+
+  .prices .previous__price {
+    padding-bottom: 0;
+  }
+
+  .cart__manage {
+    display: block;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .add_to_cart {
+    padding: 20px 30px;
   }
 }
