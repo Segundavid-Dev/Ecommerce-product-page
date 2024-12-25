@@ -5,6 +5,7 @@ const decreaseItem = document.querySelector(".decrease__item");
 const increaseItem = document.querySelector(".increase__item");
 const count = document.querySelector(".count");
 const modal = document.querySelector(".modal");
+const modalEmpty = document.querySelector(".modal__empty");
 const cartCheckout = document.querySelector(".cart__checkout");
 let addToCart = document.querySelector(".add_to_cart");
 const delete_item = document.querySelector(".delete");
@@ -80,7 +81,8 @@ products.forEach(() => {
     });
 });
 
-// still need some refactoring!!!
+// Delete Cart Items
 delete_item.addEventListener("click", () => {
-  alert("deleted items");
+  modal.classList.toggle("hide");
+  modalEmpty.classList.toggle("modal__open");
 });
