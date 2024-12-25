@@ -86,3 +86,16 @@ delete_item.addEventListener("click", () => {
   modal.classList.toggle("hide");
   modalEmpty.classList.toggle("modal__open");
 });
+
+// listen for key events
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
+  if (e.key) {
+    modalEmpty.classList.toggle("modal__open");
+    modal.classList.toggle("hide");
+    modal.classList.toggle("modal__open");
+
+    // reinitialize the item values
+    countValue = 1;
+  }
+});
