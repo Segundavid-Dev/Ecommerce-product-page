@@ -13,6 +13,7 @@ let totalItem = document.querySelector(".total__item");
 let totalPrice = document.querySelector(".total__price");
 const mainImage = document.querySelector(".main__image-img ");
 const products = document.querySelectorAll(".products");
+const cartInfoImg = document.querySelector(".cart__img-thumbnail");
 const disCountPrice = 125;
 let countValue = 0;
 
@@ -63,15 +64,19 @@ addToCart.addEventListener("click", () => {
 products.forEach(() => {
   products[0].addEventListener("click", () => {
     mainImage.src = `images/image-product-1.jpg`;
+    cartInfoImg.src = `images/image-product-1-thumbnail.jpg`;
   }),
     products[1].addEventListener("click", () => {
       mainImage.src = `images/image-product-2.jpg`;
+      cartInfoImg.src = `images/image-product-2-thumbnail.jpg`;
     }),
     products[2].addEventListener("click", () => {
       mainImage.src = `images/image-product-3.jpg`;
+      cartInfoImg.src = `images/image-product-3-thumbnail.jpg`;
     }),
     products[3].addEventListener("click", () => {
       mainImage.src = `images/image-product-4.jpg`;
+      cartInfoImg.src = `images/image-product-4-thumbnail.jpg`;
     });
 });
 
