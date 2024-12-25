@@ -15,6 +15,9 @@ let totalPrice = document.querySelector(".total__price");
 const mainImage = document.querySelector(".main__image-img ");
 const products = document.querySelectorAll(".products");
 const cartInfoImg = document.querySelector(".cart__img-thumbnail");
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav__list");
+const removeNavbar = document.querySelector(".remove");
 const disCountPrice = 125;
 let countValue = 0;
 
@@ -98,4 +101,14 @@ document.addEventListener("keydown", function (e) {
     // reinitialize the item values
     countValue = 1;
   }
+});
+
+// Toggle Nav Bar Open and Close
+hamburger.addEventListener("click", () => {
+  navList.classList.remove("remove__navbar");
+  navList.classList.add("show__navbar");
+});
+
+removeNavbar.addEventListener("click", () => {
+  navList.classList.toggle("remove__navbar");
 });

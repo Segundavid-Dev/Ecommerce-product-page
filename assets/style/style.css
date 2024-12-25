@@ -410,7 +410,7 @@ section {
     position: absolute;
     background: #fff;
     z-index: 100000;
-    left: 0;
+    left: -100%;
     top: 0;
     color: #111 !important;
     height: 100vh;
@@ -429,8 +429,19 @@ section {
     color: #111;
   }
 
-  .remove__navbar {
+  .remove {
     display: block;
     padding-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .show__navbar {
+    left: 0;
+    transition: 0.5s ease;
+  }
+
+  .remove__navbar {
+    left: -100%;
+    transition: 0.5s ease;
   }
 }
